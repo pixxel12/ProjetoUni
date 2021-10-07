@@ -43,5 +43,10 @@ namespace Projeto_com_Dois_Forms
         {
 
         }
+
+        private void txtPessoas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

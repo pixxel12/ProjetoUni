@@ -29,6 +29,7 @@ namespace Projeto_com_Dois_Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.lbNome = new System.Windows.Forms.Label();
             this.lbSobrenome = new System.Windows.Forms.Label();
             this.lbMail = new System.Windows.Forms.Label();
@@ -42,76 +43,87 @@ namespace Projeto_com_Dois_Forms
             // lbNome
             // 
             this.lbNome.AutoSize = true;
-            this.lbNome.Location = new System.Drawing.Point(33, 55);
+            this.lbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNome.Location = new System.Drawing.Point(22, 35);
             this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(38, 13);
+            this.lbNome.Size = new System.Drawing.Size(43, 13);
             this.lbNome.TabIndex = 0;
             this.lbNome.Text = "Nome:";
             // 
             // lbSobrenome
             // 
             this.lbSobrenome.AutoSize = true;
+            this.lbSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSobrenome.Location = new System.Drawing.Point(10, 86);
             this.lbSobrenome.Name = "lbSobrenome";
-            this.lbSobrenome.Size = new System.Drawing.Size(61, 13);
+            this.lbSobrenome.Size = new System.Drawing.Size(74, 13);
             this.lbSobrenome.TabIndex = 1;
-            this.lbSobrenome.Text = "Sobrenome";
+            this.lbSobrenome.Text = "Sobrenome:";
             // 
             // lbMail
             // 
             this.lbMail.AutoSize = true;
-            this.lbMail.Location = new System.Drawing.Point(42, 126);
+            this.lbMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMail.Location = new System.Drawing.Point(22, 133);
             this.lbMail.Name = "lbMail";
-            this.lbMail.Size = new System.Drawing.Size(29, 13);
+            this.lbMail.Size = new System.Drawing.Size(34, 13);
             this.lbMail.TabIndex = 2;
             this.lbMail.Text = "Mail:";
             // 
             // textNome
             // 
-            this.textNome.Location = new System.Drawing.Point(77, 48);
+            this.textNome.BackColor = System.Drawing.Color.White;
+            this.textNome.Location = new System.Drawing.Point(91, 35);
             this.textNome.Name = "textNome";
             this.textNome.Size = new System.Drawing.Size(100, 20);
             this.textNome.TabIndex = 3;
             // 
             // textSobrenome
             // 
-            this.textSobrenome.Location = new System.Drawing.Point(77, 83);
+            this.textSobrenome.BackColor = System.Drawing.Color.White;
+            this.textSobrenome.Location = new System.Drawing.Point(91, 79);
             this.textSobrenome.Name = "textSobrenome";
             this.textSobrenome.Size = new System.Drawing.Size(100, 20);
             this.textSobrenome.TabIndex = 4;
             // 
             // textMail
             // 
-            this.textMail.Location = new System.Drawing.Point(77, 119);
+            this.textMail.BackColor = System.Drawing.Color.White;
+            this.textMail.Location = new System.Drawing.Point(91, 126);
             this.textMail.Name = "textMail";
             this.textMail.Size = new System.Drawing.Size(100, 20);
             this.textMail.TabIndex = 5;
             // 
             // btListar
             // 
-            this.btListar.Location = new System.Drawing.Point(141, 198);
+            this.btListar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btListar.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btListar.Location = new System.Drawing.Point(117, 198);
             this.btListar.Name = "btListar";
-            this.btListar.Size = new System.Drawing.Size(75, 23);
+            this.btListar.Size = new System.Drawing.Size(99, 23);
             this.btListar.TabIndex = 6;
             this.btListar.Text = "Listar";
-            this.btListar.UseVisualStyleBackColor = true;
+            this.btListar.UseVisualStyleBackColor = false;
             this.btListar.Click += new System.EventHandler(this.btListar_Click);
             // 
             // btIncluir
             // 
+            this.btIncluir.BackColor = System.Drawing.Color.Gainsboro;
+            this.btIncluir.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btIncluir.Location = new System.Drawing.Point(16, 198);
             this.btIncluir.Name = "btIncluir";
-            this.btIncluir.Size = new System.Drawing.Size(75, 23);
+            this.btIncluir.Size = new System.Drawing.Size(95, 23);
             this.btIncluir.TabIndex = 7;
             this.btIncluir.Text = "Incluir";
-            this.btIncluir.UseVisualStyleBackColor = true;
+            this.btIncluir.UseVisualStyleBackColor = false;
             this.btIncluir.Click += new System.EventHandler(this.btIncluir_Click);
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(229, 252);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(251, 237);
             this.Controls.Add(this.btIncluir);
             this.Controls.Add(this.btListar);
             this.Controls.Add(this.textMail);
@@ -120,8 +132,11 @@ namespace Projeto_com_Dois_Forms
             this.Controls.Add(this.lbMail);
             this.Controls.Add(this.lbSobrenome);
             this.Controls.Add(this.lbNome);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPrincipal";
             this.Text = "Form1";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

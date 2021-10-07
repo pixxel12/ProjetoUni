@@ -40,6 +40,7 @@ namespace Projeto_com_Dois_Forms
             this.txtPessoas.Name = "txtPessoas";
             this.txtPessoas.Size = new System.Drawing.Size(376, 294);
             this.txtPessoas.TabIndex = 0;
+            this.txtPessoas.TextChanged += new System.EventHandler(this.txtPessoas_TextChanged);
             // 
             // btFechar
             // 

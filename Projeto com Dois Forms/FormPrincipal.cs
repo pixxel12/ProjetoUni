@@ -17,7 +17,7 @@ namespace Projeto_com_Dois_Forms
         {
             InitializeComponent();
             pessoas = new List<Pessoa>();
-            textNome.Focus();
+     
 
         }
 
@@ -41,7 +41,7 @@ namespace Projeto_com_Dois_Forms
             textMail.Clear();
             textNome.Focus();
 
-            MessageBox.Show(p.Nome + "cadastrado(a)");
+            MessageBox.Show(p.Nome + " cadastrado(a)");
 
         }
 
