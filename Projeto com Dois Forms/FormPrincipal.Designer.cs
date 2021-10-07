@@ -42,7 +42,7 @@ namespace Projeto_com_Dois_Forms
             // lbNome
             // 
             this.lbNome.AutoSize = true;
-            this.lbNome.Location = new System.Drawing.Point(13, 56);
+            this.lbNome.Location = new System.Drawing.Point(33, 55);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(38, 13);
             this.lbNome.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace Projeto_com_Dois_Forms
             // lbSobrenome
             // 
             this.lbSobrenome.AutoSize = true;
-            this.lbSobrenome.Location = new System.Drawing.Point(12, 86);
+            this.lbSobrenome.Location = new System.Drawing.Point(10, 86);
             this.lbSobrenome.Name = "lbSobrenome";
             this.lbSobrenome.Size = new System.Drawing.Size(61, 13);
             this.lbSobrenome.TabIndex = 1;
@@ -60,7 +60,7 @@ namespace Projeto_com_Dois_Forms
             // lbMail
             // 
             this.lbMail.AutoSize = true;
-            this.lbMail.Location = new System.Drawing.Point(12, 118);
+            this.lbMail.Location = new System.Drawing.Point(42, 126);
             this.lbMail.Name = "lbMail";
             this.lbMail.Size = new System.Drawing.Size(29, 13);
             this.lbMail.TabIndex = 2;
@@ -89,16 +89,17 @@ namespace Projeto_com_Dois_Forms
             // 
             // btListar
             // 
-            this.btListar.Location = new System.Drawing.Point(102, 198);
+            this.btListar.Location = new System.Drawing.Point(141, 198);
             this.btListar.Name = "btListar";
             this.btListar.Size = new System.Drawing.Size(75, 23);
             this.btListar.TabIndex = 6;
             this.btListar.Text = "Listar";
             this.btListar.UseVisualStyleBackColor = true;
+            this.btListar.Click += new System.EventHandler(this.btListar_Click);
             // 
             // btIncluir
             // 
-            this.btIncluir.Location = new System.Drawing.Point(15, 198);
+            this.btIncluir.Location = new System.Drawing.Point(16, 198);
             this.btIncluir.Name = "btIncluir";
             this.btIncluir.Size = new System.Drawing.Size(75, 23);
             this.btIncluir.TabIndex = 7;
@@ -110,7 +111,7 @@ namespace Projeto_com_Dois_Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(257, 267);
+            this.ClientSize = new System.Drawing.Size(229, 252);
             this.Controls.Add(this.btIncluir);
             this.Controls.Add(this.btListar);
             this.Controls.Add(this.textMail);

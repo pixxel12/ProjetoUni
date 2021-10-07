@@ -49,5 +49,12 @@ namespace Projeto_com_Dois_Forms
         {
 
         }
+
+        private void btListar_Click(object sender, EventArgs e)
+        {
+            FrmPessoas formPessoas = new FrmPessoas(pessoas);
+            formPessoas.ListaPessoas = pessoas;
+            formPessoas.Show();
+        }
     }
 }
