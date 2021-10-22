@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Calculadora Pitagoras/build/
+/Calculadora Pitagoras/nbproject/private/
+/ServletPitagoras/nbproject/private/
