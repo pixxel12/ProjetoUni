@@ -90,7 +90,7 @@ class DetailPage extends StatelessWidget {
     return Container(
       padding: new EdgeInsets.all(32.0),
       child: ListTile(
-        title: Text(user.name, style: TextStyle(fontWeight: FontWeight.w500)),
+        title: Text(user.name, style: TextStyle(fontWeight: FontWeight.w500)), //
         subtitle: Text(user.realized.toString()),
         leading: Icon(Icons.email, color: Colors.blue),
       ),
