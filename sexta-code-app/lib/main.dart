@@ -86,6 +86,7 @@ class DetailPage extends StatelessWidget {
         body: userDetails());
   }
 
+  // Userdatail
   userDetails() {
     return Container(
       padding: new EdgeInsets.all(32.0),
