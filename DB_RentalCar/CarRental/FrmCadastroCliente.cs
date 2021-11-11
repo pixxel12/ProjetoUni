@@ -22,6 +22,42 @@ namespace CarRental
 
         }
 
+        private bool validaDados()
+        {
+            if (string.IsNullOrEmpty(txtCPF.Text))
+            {
+                MessageBox.Show("O CPF está nulo!",
+                    "Verifique o CPF", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                txtCPF.Focus();
+                return false;
+            }
+
+            DateTime dataAux;
+            if(!(DateTime.TryParse(txtDataNasc.Text, out dataAux)))
+            {
+                MessageBox.Show("O CPF está nulo!",
+                    "Verifique o CPF", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                txtDataNasc.Focus();
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(txtNome.Text))
+            {
+                MessageBox.Show("O Nome está nulo!",
+                    "Verifique o Nome", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                txtNome.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
         private void btFechar_Click(object sender, EventArgs e)
         {
             this.Close();
