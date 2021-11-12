@@ -10,10 +10,10 @@ public class Curso {
     public Curso() {
     }
 
-    public Curso(int idCurso, String nomeCurso, String tipoCirso) {
+    public Curso(int idCurso, String nomeCurso, String tipoCurso) {
         this.idCurso = idCurso;
         this.nomeCurso = nomeCurso;
-        this.tipoCurso = tipoCirso;
+        this.tipoCurso = tipoCurso;
     }
     
     // Métodos modificadores de acesso(sets e gets)
@@ -37,9 +37,7 @@ public class Curso {
         return tipoCurso;
     }
 
-    public void setTipoCurso(String tipoCirso) {
-        this.tipoCurso = tipoCirso;
+    public void setTipoCurso(String tipoCurso) {
+        this.tipoCurso = tipoCurso;
     }
-
- 
 }

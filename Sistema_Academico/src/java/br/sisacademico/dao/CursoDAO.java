@@ -20,7 +20,7 @@ public class CursoDAO {
                 + "    CURSO.TIPO_CURSO,"
                 + "    (SELECT COUNT(*)"
                 + "       FROM TB_ALUNO"
-                + "      WHERE ID_CURSO = CURSO.ID_CURSO) as ALUNOS"
+                + "      WHERE IDCURSO = CURSO.IDCURSO) as ALUNOS"
                 + " FROM"
                 + "    TB_CURSO AS CURSO"
                 + " ORDER BY CURSO.NOME_CURSO";
